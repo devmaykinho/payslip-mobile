@@ -14,11 +14,11 @@ import {
   KeyboardAvoidingView,
   Image,
 } from "react-native";
-import { TextInputDefault } from "./components";
-import Button from "./components/Button";
-import { useLogo } from "./hooks/useLogo";
+import { TextInputDefault } from "../../components";
+import Button from "../../components/Button";
+import { useLogo } from "../../hooks/useLogo";
 
-import Api from "./server/api";
+import Api from "../../server/api";
 
 export function Signup() {
   const { Logo } = useLogo();

@@ -11,12 +11,11 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { HotelHomeScreen } from "./hotel_booking";
 import DrawerContent from "./DrawerContent";
-import { Signup } from "./Signup";
+import { Signup } from "./pages/Signup/Signup";
 
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import AcceptedLoads from "./pages/AcceptedLoads";
-import OnGoingLoads from "./pages/OnGoingLoads";
 import SucessSingup from "./pages/SucessSingup";
 import Menu from "./pages/Menu";
 
@@ -42,8 +41,6 @@ const DrawerNavigator: React.FC = () => {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="AcceptedLoads" component={AcceptedLoads} />
-      <Stack.Screen name="OnGoingLoads" component={OnGoingLoads} />
-      <Stack.Screen name="OnGoingLoads/:id" component={OnGoingLoads} />
       <Stack.Screen name="SucessSingup" component={SucessSingup} />
       <Stack.Screen name="Menu" component={Menu} />
     </Stack.Navigator>
