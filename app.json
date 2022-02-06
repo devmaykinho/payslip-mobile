@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "GTA Servicos",
+    "slug": "gta",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/iconegta.png",
+    "splash": {
+      "image": "./assets/slashgta.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1F2A4E"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconegta.png",
+        "backgroundColor": "#1F2A4E"
+      },
+      "package": "com.gta.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
