@@ -15,7 +15,7 @@ import { Signup } from "./pages/Signup/Signup";
 
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import AcceptedLoads from "./pages/AcceptedLoads";
+import AcceptedLoads from "./pages/PayslipList";
 import SucessSingup from "./pages/SucessSingup";
 import Menu from "./pages/Menu";
 

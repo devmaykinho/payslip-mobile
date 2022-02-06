@@ -2,12 +2,11 @@ import React from "react";
 import Button from "../../components/Button";
 import * as S from "./styles";
 import { Text } from "react-native";
-import { useLogo } from "../../hooks/useLogo";
 
 const Home: React.FC = ({ navigation }: any) => {
   return (
     <S.Wrapper>
-       <S.ImageBackground >
+      <S.ImageBackground >
       <S.ContentHome>
         <S.TextHome>
           <S.TextHomeBold>GTA</S.TextHomeBold> Serviços
