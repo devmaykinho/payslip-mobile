@@ -10,24 +10,8 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { HotelHomeScreen } from "./hotel_booking";
-import {
-  DrawerContent,
-  HelpScene,
-  FeedbackScene,
-  InviteFriendScene,
-  // Login,
-  AcceptedList,
-  AcceptedScreen,
-  Checkin,
-  Checkout,
-  CreateSchedule,
-  Delivery,
-  Signup,
-  Onboarding,
-  TrackingView,
-  TripList,
-  TrackingMap,
-} from ".";
+import DrawerContent from "./DrawerContent";
+import { Signup } from "./Signup";
 
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -62,19 +46,6 @@ const DrawerNavigator: React.FC = () => {
       <Stack.Screen name="OnGoingLoads/:id" component={OnGoingLoads} />
       <Stack.Screen name="SucessSingup" component={SucessSingup} />
       <Stack.Screen name="Menu" component={Menu} />
-
-      <Stack.Screen name="Help" component={HelpScene} />
-      <Stack.Screen name="Feedback" component={FeedbackScene} />
-      <Stack.Screen name="AcceptedList" component={AcceptedList} />
-      <Stack.Screen name="AcceptedScreen" component={AcceptedScreen} />
-      <Stack.Screen name="Checkin" component={Checkin} />
-      <Stack.Screen name="Checkout" component={Checkout} />
-      <Stack.Screen name="CreateSchedule" component={CreateSchedule} />
-      <Stack.Screen name="Delivery" component={Delivery} />
-      <Stack.Screen name="Onboarding" component={Onboarding} />
-      <Stack.Screen name="TripList" component={TripList} />
-      <Stack.Screen name="TrackingView" component={TrackingView} />
-      <Stack.Screen name="TrackingMap" component={TrackingMap} />
     </Stack.Navigator>
   );
 };
